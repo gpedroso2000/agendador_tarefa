@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Style-->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pragati+Narrow&display=swap" rel="stylesheet">
+
+    <!--Icone-->
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/1443/1443029.png" type="image/png">
+
+    <title>Agendador de Tarefas</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="divisor"></div>
+        <img class="imageHome" src="./img/home.svg" alt="">
+
+        <!--Tela de login-->
+        <div class="telaLogin">
+            <div class="pres" onkeypress="presEnter()">
+                <span>TAREFAS</span>
+                <input type="text" id="email" placeholder="E-mail" />
+                <input type="password" id="pass" placeholder="Senha" />
+                <button id="logIn" onclick="login()">Login</button>
+                <button onclick="mostrarCadastro()">Inscreva-se</button>
+            </div>
+        </div>
+
+        <!--Tela de cadastro inicialmente com display: none-->
+        <div class="telaCadastro">
+            <img src="./img/close.svg" alt="" />
+            <input type="text" id="nomeCadastro" placeholder="Nome" />
+            <input type="email" id="emailCadastro" placeholder="E-mail" />
+            <input type="password" id="passCadastro" placeholder="Senha" />
+            <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+    <script src="./scripts/login.js"></script>
+</body>
+
+</html>

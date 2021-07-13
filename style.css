@@ -1,0 +1,164 @@
+:root {
+    --back-color: rgb(107, 167, 255);
+    --back-color2: beige;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--back-color2);
+}
+
+.divisor {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    background-color: var(--back-color);
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.imageHome {
+    width: 30rem;
+    position: absolute;
+    left: 5rem;
+}
+
+
+/* Container do login */
+
+.telaLogin {
+    position: absolute;
+    right: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22rem;
+    width: 28rem;
+    background-color: rgba(245, 245, 228, 0.5);
+    box-shadow: 0px 0px 8px rgb(134, 134, 134);
+    border-radius: 2rem;
+}
+
+
+/* Tela de cadastro */
+
+.telaCadastro {
+    display: none;
+}
+
+
+/* Tela de cadastro a mostra */
+
+.show {
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    z-index: 1;
+    background-color: rgba(245, 245, 228);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 8px rgb(134, 134, 134);
+}
+
+.telaCadastro button {
+    height: 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(168, 203, 255);
+    color: white;
+    display: inline-block;
+    width: 10rem;
+    border-radius: 0.5rem;
+    transition: background 0.5s;
+}
+
+.telaCadastro button:hover {
+    background-color: var(--back-color);
+}
+
+.telaCadastro input {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 25rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+.telaCadastro img {
+    width: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+
+/* Conteudo do login */
+
+.pres {
+    display: grid;
+    gap: 0.7rem;
+    width: 22rem;
+}
+
+div .pres span {
+    font-family: 'Monoton', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+div .pres input {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+div .pres button {
+    height: 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(168, 203, 255);
+    color: white;
+    display: inline-block;
+    width: 100%;
+    border-radius: 0.5rem;
+    transition: background 0.5s;
+}
+
+div .pres button:hover {
+    background-color: var(--back-color);
+}
+
+input:focus-visible {
+    border: 0 none;
+    outline: 0;
+}

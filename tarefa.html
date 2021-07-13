@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Style-->
+    <link rel="stylesheet" href="./tarefa.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pragati+Narrow&display=swap" rel="stylesheet">
+
+    <!--Icone-->
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/1443/1443029.png" type="image/png">
+
+    <title>Agendador de Tarefas</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="divisor"></div>
+        <div id="ola">
+        </div>
+
+        <!--Digitar Tarefa-->
+        <div class="containerTarefa">
+            <div class="containerInserir">
+                <input id="descricao" type="text" placeholder="Guarde sua Tarefa">
+                <button id="btn" type="submit">Inserir</button>
+            </div>
+
+            <!--Tarefas-->
+            <div id="divTarefa"></div>
+
+        </div>
+        <button id="logoff" onclick="logout()">Sair</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+    <script src="./scripts/tarefa.js"></script>
+
+</body>
+
+</html>
