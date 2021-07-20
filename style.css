@@ -21,7 +21,7 @@ body {
 .divisor {
     position: absolute;
     top: 0;
-    height: 50%;
+    height: 50vh;
     width: 100%;
     background-color: var(--back-color);
     border-radius: 0 0 1.5rem 1.5rem;
@@ -165,21 +165,47 @@ input:focus-visible {
     outline: 0;
 }
 
+/* Tablet */
 @media (max-width: 1060px){
     .container {
-        justify-content: center;
-        
+        justify-content: center; 
     }
 
     .imageHome {
         display: none;
-        
     }
 
     .telaLogin {
         right: inherit;
-        
+        /* width: 10rem; */
+    }
+}
+
+/* cell */
+@media (max-width: 400px){
+    .container {
+        justify-content: center;   
     }
 
+    .imageHome {
+        display: none;     
+    }
+
+    .telaLogin {
+        right: inherit;
+        width: 22rem;   
+    }
+
+    div .pres {
+        margin: 0.5rem;
+    }
+
+    .show{
+        width: 23rem;
+    }
+
+    div .show input {
+        width: 22rem;
+    }
 
 }
