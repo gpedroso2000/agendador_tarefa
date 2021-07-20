@@ -172,6 +172,8 @@ input:focus-visible {
   color: var(--back-color);
 }
 
+
+/* Tablet */
 @media (max-width: 680px) {
   .container {
     width: 100%;
@@ -212,3 +214,53 @@ input:focus-visible {
     width: 28rem;
   }
 }
+
+
+/* cell */
+@media (max-width: 400px){
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #ola p {
+    font-size: 1.4rem;
+  }
+
+  .containerTarefa {
+    width: 22rem;
+    top: 6rem;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .containerInserir {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .containerInserir input {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .containerInserir button {
+    width: 100%;
+    margin: auto;
+  }
+
+  #divTarefa {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+.remove {
+    height: 50%;
+  }
+}
+
+
