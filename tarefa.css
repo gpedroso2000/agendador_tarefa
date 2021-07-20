@@ -1,170 +1,214 @@
 :root {
-    --back-color: rgb(107, 167, 255);
-    --back-color2: beige;
+  --back-color: rgb(107, 167, 255);
+  --back-color2: beige;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 
 /* Container sobre toda a pagina */
 
 .container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    background-color: var(--back-color2);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  background-color: var(--back-color2);
 }
 
 .divisor {
-    position: absolute;
-    top: 0;
-    height: 50%;
-    width: 100%;
-    background-color: var(--back-color);
-    border-radius: 0 0 1.5rem 1.5rem;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  height: 50vh;
+  width: 100%;
+  background-color: var(--back-color);
+  border-radius: 0 0 1.5rem 1.5rem;
 }
 
+.imageHome {
+  display: none;
+}
 
 /* Texto de boas vindas */
 
 #ola {
-    position: absolute;
-    top: 0.2;
-    left: 1rem;
+  position: absolute;
+  top: 0.2;
+  left: 1rem;
 }
 
 #ola p {
-    font-family: 'Monoton', cursive;
-    font-size: 2.5rem;
-    margin: 0;
+  font-family: "Monoton", cursive;
+  font-size: 2.5rem;
+  margin: 0;
 }
-
 
 /* Div juntando a inserção das taferas e eles inseridas */
 
 .containerTarefa {
-    position: absolute;
-    top: 7rem;
-    left: 1rem;
-    width: 98%;
+  position: absolute;
+  top: 7rem;
+  left: 1rem;
+  width: 100%;
 }
-
 
 /* Div inserir tarefa */
 
 .containerInserir {
-    width: 100%;
-    margin-bottom: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .containerInserir input {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 80%;
-    height: 3rem;
-    font-size: 1.2rem;
-    margin-right: 0;
-    padding: 0.5rem;
-    border: 0;
-    border-radius: 0.5rem;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 80%;
+  height: 3rem;
+  font-size: 1.3rem;
+  margin-right: 0;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.5rem;
 }
 
 .containerInserir button {
-    height: 3rem;
-    margin-left: 0.5rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border: 0;
-    background-color: white;
-    color: rgb(168, 203, 255);
-    display: inline-block;
-    width: 6rem;
-    border-radius: 0.5rem;
-    transition: background 0.5s;
+  height: 3rem;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  color: rgb(168, 203, 255);
+  display: inline-block;
+  width: 6rem;
+  border-radius: 0.5rem;
+  transition: background 0.5s;
 }
 
-.containerInserir button:hover {
-    background-color: var(--back-color2);
-    color: var(--back-color);
+.containerInserir button:hover:active{
+  background-color: var(--back-color2);
+  color: var(--back-color);
 }
 
 input:focus-visible {
-    border: 0 none;
-    outline: 0;
+  border: 0 none;
+  outline: 0;
 }
-
 
 /* Tarefas inseridas */
 
 #divTarefa {
-    display: flex;
-    flex-direction: column;
-    gap: 0.9rem;
-    width: 87%;
-    background: white;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 87%;
+  padding: 0.5rem;
+  background: var(--back-color2);
+  border-radius: 0.5rem;
 }
-
 
 /* Tarefa unica */
 
 #tarefa {
-    display: flex;
-    align-items: center;
-    position: relative;
+  box-sizing: border-box;
+  height: 3rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 #tarefa span {
-    font-size: 1.2rem;
-    font-family: sans-serif;
+  font-size: 1.3rem;
+  font-family: sans-serif;
 }
 
 #tarefa button {
-    position: absolute;
-    right: 0;
-    height: 2rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-    border: 0;
-    background-color: rgb(168, 203, 255);
-    color: white;
-    display: inline-block;
-    width: 5rem;
-    border-radius: 0.5rem;
-    transition: background 0.5s;
+  position: absolute;
+  right: 0rem;
+  height: 3rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 0;
+  background-color: rgb(168, 203, 255);
+  color: white;
+  display: inline-block;
+  width: 5rem;
+  border-radius: 0.5rem;
+  transition: background 0.5s;
 }
 
-#tarefa button:hover {
-    background-color: var(--back-color);
+#tarefa button:hover:active {
+  background-color: var(--back-color);
 }
-
 
 /* Botão sair */
 
 #logoff {
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-    height: 3rem;
-    margin-left: 0.5rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border: 0;
-    background-color: white;
-    color: rgb(168, 203, 255);
-    display: inline-block;
-    width: 4rem;
-    border-radius: 0.5rem;
-    transition: background 0.5s;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  height: 3rem;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  color: rgb(168, 203, 255);
+  display: inline-block;
+  width: 4rem;
+  border-radius: 0.5rem;
+  transition: background 0.5s;
 }
 
-#logoff:hover {
-    background-color: var(--back-color2);
-    color: var(--back-color);
+#logoff:hover:active {
+  background-color: var(--back-color2);
+  color: var(--back-color);
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: 100%;
+  }
+
+  #ola p {
+    font-size: 1.8rem;
+  }
+
+  .containerTarefa {
+    top: 6rem;
+    left: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerInserir {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .containerInserir input {
+    margin-bottom: 0.5rem;
+    width: 28rem;
+  }
+
+  .containerInserir button {
+    width: 28rem;
+    margin-left: 0;
+  }
+
+
+  #divTarefa {
+    width: 28rem;
+  }
 }

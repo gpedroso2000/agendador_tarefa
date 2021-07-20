@@ -31,6 +31,7 @@ body {
     width: 30rem;
     position: absolute;
     left: 5rem;
+
 }
 
 
@@ -75,6 +76,7 @@ body {
     background-color: rgba(245, 245, 228);
     border-radius: 2rem;
     box-shadow: 0px 0px 8px rgb(134, 134, 134);
+
 }
 
 .telaCadastro button {
@@ -90,7 +92,7 @@ body {
     transition: background 0.5s;
 }
 
-.telaCadastro button:hover {
+.telaCadastro button:hover:active {
     background-color: var(--back-color);
 }
 
@@ -154,11 +156,30 @@ div .pres button {
     transition: background 0.5s;
 }
 
-div .pres button:hover {
+div .pres button:hover:active {
     background-color: var(--back-color);
 }
 
 input:focus-visible {
     border: 0 none;
     outline: 0;
+}
+
+@media (max-width: 1060px){
+    .container {
+        justify-content: center;
+        
+    }
+
+    .imageHome {
+        display: none;
+        
+    }
+
+    .telaLogin {
+        right: inherit;
+        
+    }
+
+
 }
